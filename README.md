@@ -14,7 +14,12 @@ git clone https://github.com/ljfalling/lit-chat.git
 cd lit-chat
 ```
 ### Run with UV
-The depository is a [uv](https://github.com/astral-sh/uv) project folder, so if you have uv installed (use standalone installer following the link on the left) you can run the scripts and uv will take care of dependencies. You can run scripts with
+The depository is a [uv](https://github.com/astral-sh/uv) project folder, so if you have uv installed (use standalone installer following the link on the left) you can run the scripts and uv will take care of dependencies.
+Provide your Mistral API key with
+```
+export MISTRAL_API_KEY="here_goes_your_api_key"
+```
+You can run scripts with
 ```
 uv run script.py
 ```
@@ -42,6 +47,10 @@ source .venv/bin/activate
 and install dependencies listed in the pyproject.toml and uv.lock using pip:
 ```
 pip install -e .
+```
+Provide your Mistral API key with
+```
+export MISTRAL_API_KEY="here_goes_your_api_key"
 ```
 and run the script via
 ```
