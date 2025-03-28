@@ -1,0 +1,7 @@
+[project]
+name = "literature-chat"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.5"
+dependencies = ["typer", "mistralai", "langchain", "langchain_mistralai", "langchain_community", "langchain_core", "faiss_cpu"]
