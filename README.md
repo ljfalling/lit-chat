@@ -56,3 +56,4 @@ and run the script via
 ```
 python pdf2markdown.py "pdf-collection" "markdown-collection"
 ```
+
