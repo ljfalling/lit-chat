@@ -1,10 +1,28 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
+*.py[cod]
 build/
 dist/
 wheels/
 *.egg-info
+.DS_Store
+.uv/
 
 # Virtual environments
 .venv
+.env
+
+# Data directories
+**/pdf-collection/
+**/markdown-collection/
+**/faiss_data/
+
+# Large files
+*.faiss
+*.pkl
+qa_history.pkl
+
+# Mistral/API files
+**/mistral_files/
+
