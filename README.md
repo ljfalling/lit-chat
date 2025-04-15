@@ -19,6 +19,10 @@ Provide your Mistral API key with
 ```
 export MISTRAL_API_KEY="here_goes_your_api_key"
 ```
+or, for windows,
+```
+$env:MISTRAL_API_KEY = "here_goes_your_api_key"
+```
 You can run scripts with
 ```
 uv run script.py
