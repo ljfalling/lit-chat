@@ -8,6 +8,7 @@ import os
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_mistralai.chat_models import ChatMistralAI
 from langchain_core.prompts import ChatPromptTemplate
+from md2faiss import remove_images_from_text
 
 def sanitize_filename(filename: str, max_length: int = 80) -> str:
     """
@@ -32,6 +33,8 @@ def generate_filename(file_path, api_key):
     # Read the document content
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
+        # Remove images from content
+        content = remove_images_from_text(content)    
     
     # Take first 3000 characters
     preview_text = content[:3000]

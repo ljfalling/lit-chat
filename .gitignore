@@ -16,7 +16,7 @@ wheels/
 # Data directories
 **/pdf-collection/
 **/markdown-collection/
-**/faiss_data/
+**/faiss-data/
 
 # Large files
 *.faiss
