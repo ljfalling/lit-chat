@@ -25,9 +25,7 @@ def concatenate_md_files(md_filepaths):
         loader = TextLoader(file_path)
         docs = loader.load()
         for doc in docs:
-            print(doc.page_content)
             doc.page_content = remove_images_from_text(doc.page_content)
-            print(doc.page_content)
         multiple_docs.extend(docs)
     return multiple_docs
 
